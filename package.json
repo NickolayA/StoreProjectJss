@@ -74,6 +74,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/serialize-javascript": "^5.0.0",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "~9.0.2",
     "chalk": "~2.4.2",

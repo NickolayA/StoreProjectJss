@@ -17,7 +17,6 @@
     "jsx": "react-jsx"
   },
   "awesomeTypescriptLoaderOptions": {
-    "forceIsolatedModules ": false,
     "errorsAsWarnings": true
   },
   "include": ["src"]

@@ -75,5 +75,3 @@ export const Products: FunctionComponent = (): JSX.Element => {
     </Fragment>
   );
 };
-
-export default Products;

@@ -10,7 +10,7 @@ import ISitecoreField from '../../models/generic/ISitecoreField';
 import ISitecoreItem from '../../models/generic/ISitecoreItem';
 import IntroQuery from '../../queries/IntroQuery';
 
-const Intro: FunctionComponent = (): JSX.Element => {
+export const Intro: FunctionComponent = (): JSX.Element => {
   const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
     SitecoreContextReactContext
   ).context;
@@ -51,5 +51,3 @@ const Intro: FunctionComponent = (): JSX.Element => {
     </React.Fragment>
   );
 };
-
-export default Intro;
