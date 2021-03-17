@@ -94,7 +94,7 @@ export default ${exportVarName};
 
   fs.mkdirSync(outputDirectoryPath);
 
-  const outputFilePath = path.join(outputDirectoryPath, 'index.js');
+  const outputFilePath = path.join(outputDirectoryPath, `${componentName}.tsx`);
 
   fs.writeFileSync(outputFilePath, componentTemplate, 'utf8');
 

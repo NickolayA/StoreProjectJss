@@ -65,13 +65,13 @@ function generateComponentFactory() {
     const componentFolderFullPath = path.join(componentRootPath, componentFolder);
 
     if (
-      fs.existsSync(path.join(componentFolderFullPath, 'index.js')) ||
-      fs.existsSync(path.join(componentFolderFullPath, 'index.jsx'))
+      fs.existsSync(path.join(componentFolderFullPath, `${componentFolder}.ts`)) ||
+      fs.existsSync(path.join(componentFolderFullPath, `${componentFolder}.tsx`))
     ) {
       const importVarName = componentFolder.replace(/[^\w]+/g, '');
 
       console.debug(`Registering JSS component ${componentFolder}`);
-      imports.push(`import ${importVarName} from '../components/${componentFolder}';`);
+      imports.push(`import * as ${importVarName} from '../components/${componentFolder}';`);
       registrations.push(`components.set('${componentFolder}', ${importVarName});`);
     }
   });

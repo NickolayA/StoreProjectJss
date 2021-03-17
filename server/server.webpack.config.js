@@ -16,16 +16,16 @@ module.exports = {
     libraryTarget: 'this',
   },
   optimization: {
-    minimize: false,
+    minimize: true,
   },
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(tsx|ts|js)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'awesome-typescript-loader'
-        }
+          loader: 'awesome-typescript-loader',
+        },
       },
       {
         test: /\.m?jsx?$/,
@@ -63,6 +63,9 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
   },
   plugins: [
     // prevents the following warning during build:
