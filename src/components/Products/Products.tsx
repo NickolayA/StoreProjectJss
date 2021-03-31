@@ -66,12 +66,13 @@ export const Products: FunctionComponent = (): JSX.Element => {
         return (
           <ul key={index}>
             <li>{product.Title}</li>
-            <li>{product.Image}</li>
+            <li>
+              <img src={product.Image} />
+            </li>
             <li>{product.OfferDate}</li>
           </ul>
         );
       })}
-      ;
     </Fragment>
   );
 };

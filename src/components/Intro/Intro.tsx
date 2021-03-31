@@ -17,8 +17,8 @@ export const Intro: FunctionComponent = (): JSX.Element => {
   const apolloContext = useContext(getApolloContext());
 
   const [introFieldValues, setIntroFieldValues] = useState<IIntro>({
-    Title: 'undefined',
-    Description: 'undefined',
+    Title: '',
+    Description: '',
   });
 
   useEffect(() => {

@@ -1,4 +1,3 @@
-export default interface ISitecoreItem<T>
-{
-    fields: Array<T>
+export default interface ISitecoreItem<T> {
+  fields: Array<T>;
 }
