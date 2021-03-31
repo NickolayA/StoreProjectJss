@@ -1,9 +1,22 @@
-import React from 'react';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
+import * as React from 'react';
+import { Text, Link } from '@sitecore-jss/sitecore-jss-react';
+import IUsefulLinks from '../../models/data/IUsefulLinks';
+import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 
-export const UsefulLinks = (props: any) => {
-  <div>
-    <p>UsefulLinks Component</p>
-    <Text field={props.fields.heading} />
-  </div>;
+export const UsefulLinks = (props: ISitecoreProps<IUsefulLinks>) => {
+  console.log(props);
+
+  return (
+    <React.Fragment>
+      <ul>
+        {props.fields.Links.map((linkItem, index) => {
+          return (
+            <li key={`${index}-${linkItem.id}`}>
+              <Link field={linkItem.fields.Link} />
+            </li>
+          );
+        })}
+      </ul>
+    </React.Fragment>
+  );
 };
