@@ -14,6 +14,7 @@ import IProduct from '../../models/data/IProduct';
 import Product from '../../models/data/Product';
 
 // TODO Change ResultItem interface
+// TODO Get jss markup and use jss field renderings
 interface ResultItem {
   item: ISitecoreItem<ISitecoreField<string>>;
 }
