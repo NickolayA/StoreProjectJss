@@ -1,5 +1,3 @@
-import { ComponentRendering, RouteData } from '@sitecore-jss/sitecore-jss-react';
+import ILayout from './ILayout';
 
-export default interface IHeader {
-  rendering: ComponentRendering | RouteData;
-}
+export default interface IHeader extends ILayout {}
