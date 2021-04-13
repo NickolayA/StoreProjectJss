@@ -1,4 +1,4 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+typ# See https://help.github.com/ignore-files/ for more about ignoring files.
 
 /scripts-copy
 
@@ -23,3 +23,6 @@
 scjssconfig.json
 *.deploysecret.config
 /build-rendering-host
+
+
+.eslintcache
