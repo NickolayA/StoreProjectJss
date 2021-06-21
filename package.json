@@ -6,7 +6,9 @@
   "config": {
     "appName": "store",
     "rootPlaceholders": [
-      "jss-main"
+      "jss-main",
+      "header",
+      "footer"
     ],
     "sitecoreDistPath": "/dist/store",
     "sitecoreConfigPath": "/App_Config/Include/zzz",

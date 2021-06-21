@@ -76,12 +76,14 @@ function scaffoldComponent() {
   const componentTemplate = `import React from 'react';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
-export const ${exportVarName} = (props: any) => {
-  return (<div>
+const ${exportVarName} = (props) => (
+  <div>
     <p>${componentName} Component</p>
     <Text field={props.fields.heading} />
-  </div>);
-};
+  </div>
+);
+
+export default ${exportVarName};
 `;
 
   const outputDirectoryPath = path.join(componentRootPath, componentName);
@@ -92,7 +94,7 @@ export const ${exportVarName} = (props: any) => {
 
   fs.mkdirSync(outputDirectoryPath);
 
-  const outputFilePath = path.join(outputDirectoryPath, `${componentName}.tsx`);
+  const outputFilePath = path.join(outputDirectoryPath, 'index.js');
 
   fs.writeFileSync(outputFilePath, componentTemplate, 'utf8');
 

@@ -21,13 +21,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(tsx|ts|js)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'awesome-typescript-loader',
-        },
-      },
-      {
         test: /\.m?jsx?$/,
         exclude: /node_modules/,
         use: {
