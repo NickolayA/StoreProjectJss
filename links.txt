@@ -1,11 +1,18 @@
 https://storesc.dev.local//api/store-project/ui?sc_apikey=%7BF35E51D7-BBB7-4F07-9614-A7D662908F32%7D&query=%23%20Welcome%20to%20GraphiQL%0A%23%0A%23%20GraphiQL%20is%20an%20in-browser%20tool%20for%20writing%2C%20validating%2C%20and%0A%23%20testing%20GraphQL%20queries.%0A%23%0A%23%20Type%20queries%20into%20this%20side%20of%20the%20screen%2C%20and%20you%20will%20see%20intelligent%0A%23%20typeaheads%20aware%20of%20the%20current%20GraphQL%20type%20schema%20and%20live%20syntax%20and%0A%23%20validation%20errors%20highlighted%20within%20the%20text.%0A%23%0A%23%20GraphQL%20queries%20typically%20start%20with%20a%20%22%7B%22%20character.%20Lines%20that%20starts%0A%23%20with%20a%20%23%20are%20ignored.%0A%23%0A%23%20An%20example%20GraphQL%20query%20might%20look%20like%3A%0A%23%0A%23%20%20%20%20%20%7B%0A%23%20%20%20%20%20%20%20field(arg%3A%20%22value%22)%20%7B%0A%23%20%20%20%20%20%20%20%20%20subField%0A%23%20%20%20%20%20%20%20%7D%0A%23%20%20%20%20%20%7D%0A%23%0A%23%20Keyboard%20shortcuts%3A%0A%23%0A%23%20%20Prettify%20Query%3A%20%20Shift-Ctrl-P%20(or%20press%20the%20prettify%20button%20above)%0A%23%0A%23%20%20%20%20%20%20%20Run%20Query%3A%20%20Ctrl-Enter%20(or%20press%20the%20play%20button%20above)%0A%23%0A%23%20%20%20Auto%20Complete%3A%20%20Ctrl-Space%20(or%20just%20start%20typing)%0Aquery%20%7B%0A%20%20item(path%3A%20%22%7Bd3b3bd44-b3fc-463f-8e40-165bf4824636%7D%22)%7B%0A%20%20%20%20displayName%0A%20%20%7D%0A%7D
 
 
+https://storesc.dev.local//api/store/ui?sc_apikey={61FA884F-493D-40C3-BB76-F206837BDF8D}
+
+
 https://localhost:8984/solr
 
 https://www.linkedin.com/pulse/using-graphql-aspnet-core-headless-cms-sitecore-10-g%C3%B6ran-halvarsson?trk=read_related_article-card_title
 
 https://storesc.dev.local//sitecore/api/layout/render/jss?item=%2Fproducts&sc_lang=en&sc_apikey=%7B61FA884F-493D-40C3-BB76-F206837BDF8D%7D
+
+https://storesc.dev.local//sitecore/api/layout/render/jss?item=%7B06EC8232-8F27-4634-AD39-A44EBAE1EF08%7D&sc_apikey=%7B61FA884F-493D-40C3-BB76-F206837BDF8D%7D
+
+
 
 jss deploy app --acceptCertificate 60:B4:EA:7C:A0:0F:EE:7E:C1:3C:04:E8:3E:37:7D:07:A7:32:22:F1
 

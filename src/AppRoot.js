@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import React from 'react';
 import { SitecoreContext } from '@sitecore-jss/sitecore-jss-react';
 import { Route, Switch } from 'react-router-dom';
