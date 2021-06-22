@@ -7,6 +7,8 @@
     "appName": "store",
     "rootPlaceholders": [
       "jss-main",
+      "header",
+      "footer"
     ],
     
     "sitecoreDistPath": "/dist/store",
