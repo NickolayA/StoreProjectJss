@@ -21,6 +21,11 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.tsx?$/,
+				exclude: /node_modules/,
+				loader: 'awesome-typescript-loader'
+			},
+			{
 				test: /\.m?jsx?$/,
 				exclude: /node_modules/,
 				use: {
@@ -39,7 +44,7 @@ module.exports = {
 			{
 				// anything not JS or HTML, we load as a URL
 				// this makes static image imports work with SSR
-				test: /\.(?!js|mjs|jsx|html|graphql$)[^.]+$/,
+				test: /\.(?!js|mjs|jsx|html|tsx|graphql$)[^.]+$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'url-loader'

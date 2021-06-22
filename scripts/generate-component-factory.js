@@ -71,7 +71,7 @@ function generateComponentFactory() {
 			const importVarName = componentFolder.replace(/[^\w]+/g, '');
 
 			console.debug(`Registering JSS component ${componentFolder}`);
-			imports.push(`import { ${importVarName} } from '../components/${componentFolder}';`);
+			imports.push(`import { ${importVarName} } from '../components/${componentFolder}/index.tsx';`);
 			registrations.push(`components.set('${componentFolder}', ${importVarName});`);
 		}
 	});
