@@ -27,24 +27,33 @@ Site should be available in 2 languages
 	Use JSS CLI to scaffold project 
 	Project structure:
 
-Home [all data like: components, fields &etc. should fully support EE. Page should be available in disconnected and connected modes]
+	- Home [all data like: components, fields &etc. should fully support EE. Page should be available in disconnected and connected modes]
 	
-Hero Banner (image [srcset should be used for different screen sizes], text)
+		Hero Banner (image [srcset should be used for different screen sizes], text)
 		Top products - Title, Description(Multiline text), ListOfProducts (Multilist)
-	
-Each product should contain (Image, title, short description (Multiline text), offer date, quantity)	
+			Each product should contain (Image, title, short description (Multiline text), offer date, quantity)	
 		Useful links
-	Products [Not supported in EE, use GraphQL to get data for this page, connected mode only]
+
+	- Products [Not supported in EE, use GraphQL to get data for this page, connected mode only]
 		
-Intro (Title, Description)
+		Intro (Title, Description)
 		Products [Use data from search index retrieved via GraphQL]
 				
-Each product should contain (Image, title, offer date)
+			Each product should contain (Image, title, offer date)
 		
-	Product overview [all data like components, fields &etc. should fully support EE. Connected mode only]
+	- Product overview [all data like components, fields &etc. should fully support EE. Connected mode only]
 	
-Image  [srcset should be used for different screen sizes]
+		Image  [srcset should be used for different screen sizes]
 		Title
 		Description (rich text)
 		Offer date
 		Quantity
+
+
+
+
+
+
+
+
+		

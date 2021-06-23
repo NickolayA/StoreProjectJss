@@ -1,5 +1,5 @@
-import ILink from './ILink';
+import ISitecoreMultilistItem from '../generic/ISitecoreMultilistItem';
 
-export default interface Navigation {
-  Pages: any[];
+export default interface INavigation {
+  Pages: ISitecoreMultilistItem<any>[];
 }

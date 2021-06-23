@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import INavigation from '../../models/data/INavigation';
+import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
+import { Link } from 'react-router-dom';
 
-interface INavigation {
-  rendering: {
-    componentName: string;
-  };
-}
-
-export const Navigation = (props: INavigation) => {
+export const Navigation = ({ fields: { Pages } }: ISitecoreProps<INavigation>): JSX.Element => {
   return (
-    <div>
-      <p>Navigation Component 2</p>
-      <p>Component Name: {props.rendering.componentName}</p>
-    </div>
+    <Fragment>
+      {Pages.map((page) => {
+        return (
+          <Link key={page.id} to={page.url} style={{ marginRight: '10px' }}>
+            {page.displayName}
+          </Link>
+        );
+      })}
+    </Fragment>
   );
 };
