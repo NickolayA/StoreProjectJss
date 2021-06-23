@@ -65,8 +65,10 @@ function generateComponentFactory() {
     const componentFolderFullPath = path.join(componentRootPath, componentFolder);
 
     if (
-      fs.existsSync(path.join(componentFolderFullPath, `${componentFolder}.ts`)) ||
-      fs.existsSync(path.join(componentFolderFullPath, `${componentFolder}.tsx`))
+      fs.existsSync(path.join(componentFolderFullPath, 'index.js')) ||
+      fs.existsSync(path.join(componentFolderFullPath, 'index.jsx')) ||
+      fs.existsSync(path.join(componentFolderFullPath, 'index.ts')) ||
+      fs.existsSync(path.join(componentFolderFullPath, 'index.tsx'))
     ) {
       const importVarName = componentFolder.replace(/[^\w]+/g, '');
 

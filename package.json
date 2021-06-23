@@ -6,8 +6,11 @@
   "config": {
     "appName": "store",
     "rootPlaceholders": [
-      "jss-main"
+      "jss-main",
+      "header",
+      "footer"
     ],
+    
     "sitecoreDistPath": "/dist/store",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/api/store",
@@ -35,6 +38,7 @@
     "@apollo/client": "^3.3.12",
     "@sitecore-jss/sitecore-jss-react": "^16.0.0",
     "@sitecore-jss/sitecore-jss-tracking": "^16.0.0",
+    "@types/node": "^14.14.39",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "apollo-cache-inmemory": "~1.6.3",
@@ -59,6 +63,7 @@
     "react-i18next": "~11.3.3",
     "react-router-dom": "~5.1.0",
     "react-scripts": "4.0.1",
+    "reflect-metadata": "^0.1.13",
     "serialize-javascript": "~3.1.0"
   },
   "devDependencies": {
@@ -126,7 +131,7 @@
     "bootstrap:disconnected": "node scripts/bootstrap.js --disconnected",
     "graphql:update": "node -r babel-register ./scripts/update-graphql-fragment-data.js",
     "test": "react-scripts test --env=jsdom",
-    "lint": "eslint ./src/**/*.js ./sitecore/definitions/**/*.js ./scripts/**/*.js ./server/**/*.js ./data/**/*.yml",
+    "lint": "eslint ./src/**/*.js ./sitecore/definitions/**/*.js ./scripts/**/*.js ./server/**/*.js ./data/**/*.yml ./src/**/*.tsx",
     "eject": "react-scripts eject",
     "eject:script": "ncp ./scripts ./scripts-copy && node ./scripts-copy/eject.js && ncp ./scripts-copy ./scripts && del-cli ./scripts-copy"
   },
