@@ -3,7 +3,7 @@ import {
   SitecoreContextState,
 } from '@sitecore-jss/sitecore-jss-react';
 import React, { useContext, FunctionComponent, useState, useEffect } from 'react';
-import { getApolloContext } from 'react-apollo';
+import { getApolloContext, useQuery } from 'react-apollo';
 import IIntro from '../../models/data/IIntro';
 import ISitecoreContext from '../../models/generic/ISitecoreContext';
 import ISitecoreField from '../../models/generic/ISitecoreField';
