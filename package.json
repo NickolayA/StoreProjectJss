@@ -10,7 +10,6 @@
       "header",
       "footer"
     ],
-    
     "sitecoreDistPath": "/dist/store",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/api/store",
@@ -62,6 +61,7 @@
     "react-helmet": "~5.2.1",
     "react-i18next": "~11.3.3",
     "react-router-dom": "~5.1.0",
+    "react-script-tag": "^1.1.2",
     "react-scripts": "4.0.1",
     "reflect-metadata": "^0.1.13",
     "serialize-javascript": "~3.1.0"

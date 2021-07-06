@@ -1,4 +1,4 @@
-export default interface ISitecoreMultilistItem<T> {
+export default interface ISitecoreMultilistItem<T = {}> {
   id: string;
   url: string;
   name: string;
