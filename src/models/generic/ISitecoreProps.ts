@@ -1,6 +1,6 @@
-export interface ISitecoreProps<T> {
+export interface ISitecoreProps<T = {}> {
   rendering: any;
-  fields: T;
+  fields: T; // refactor for fields?
   params: any;
   componentFactory: any;
 }
