@@ -32,7 +32,7 @@ Site should be available in 2 languages
 		Hero Banner (image [srcset should be used for different screen sizes], text)
 		Top products - Title, Description(Multiline text), ListOfProducts (Multilist)
 			Each product should contain (Image, title, short description (Multiline text), offer date, quantity)	
-		Useful links
+		Useful links - TODO
 
 	- Products [Not supported in EE, use GraphQL to get data for this page, connected mode only]
 		
