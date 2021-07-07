@@ -4,7 +4,6 @@ import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 import IHeroBanner from '../../models/data/IHeroBanner';
 
 export const HeroBanner = (props: ISitecoreProps<IHeroBanner>): JSX.Element => {
-  console.log(props)
   return (
     <React.Fragment>
       <div className="hero-wrap" style={{ backgroundImage: `url(${props?.fields?.Image?.value?.src} )` }} data-stellar-background-ratio="0.5">

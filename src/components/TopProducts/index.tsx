@@ -5,20 +5,20 @@ import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 import ITopProducts from '../../models/data/ITopProducts';
 import { Link } from 'react-router-dom';
 
-export const TopProducts: FunctionComponent<ISitecoreProps<ITopProducts>> = ({ fields }) => {
+export const TopProducts = (props: ISitecoreProps<ITopProducts>): JSX.Element => {
   return (
     <React.Fragment>
       <section className="ftco-section" style={{ backgroundColor: 'white' }}>
         <div className="container">
           <div className="row justify-content-center pb-5">
             <div className="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
-              <Text tag="span" className="subheading" field={fields.Title} />
-              <Text field={fields.Description} tag="h2" />
+              <Text tag="span" className="subheading" field={props.fields.Title} />
+              <Text field={props.fields.Description} tag="h2" />
             </div>
           </div>
 
           <div className="row">
-            {fields.ListOfProducts.map((product) => {
+            {props.fields.ListOfProducts.map((product) => {
               return (
                 <div className="col-md-3 d-flex" key={product.id}>
                   <div className="product ftco-animate fadeInUp ftco-animated">
