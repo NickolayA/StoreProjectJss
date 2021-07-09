@@ -8,16 +8,9 @@ import { getApolloContext } from 'react-apollo';
 import ContentSearchProductsQuery from '../../queries/ContentSearchProductsQuery';
 import ISitecoreContext from '../../models/generic/ISitecoreContext';
 import { ProductOverviewPageTemplate } from '../../Constants';
-import ISitecoreItem from '../../models/generic/ISitecoreItem';
-import ISitecoreField from '../../models/generic/ISitecoreField';
 import IProduct from '../../models/data/IProduct';
-import Product from '../../models/data/Product';
+import { Link } from 'react-router-dom'
 
-// TODO Change ResultItem interface
-// TODO Get jss markup and use jss field renderings
-interface ResultItem {
-  item: ISitecoreItem<ISitecoreField<string>>;
-}
 
 export const Products: FunctionComponent = (): JSX.Element => {
   const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
@@ -37,43 +30,33 @@ export const Products: FunctionComponent = (): JSX.Element => {
         ),
       })
       .then((result) => {
-        const newProducts: Array<IProduct> = [];
-        const items: Array<ResultItem> = result.data.search.results.items;
+        let productItems: IProduct[] = result.data.search.results.items.map((item: any) => item.item);
+        productItems = productItems.map((item: any) => ({ Title: item.Title.jss, Image: item.Image.jss, OfferDate: item.OfferDate.jss, Url: item.url }));
 
-        items.map((item: ResultItem) => {
-          const resultItem = item.item;
-          const product: IProduct = new Product();
-
-          resultItem.fields.map((field: ISitecoreField<string>) => {
-            if (field.name === 'Title') {
-              product.Title = field.value;
-            } else if (field.name === 'Image') {
-              product.Image = field.jss?.value.src;
-            } else if (field.name === 'OfferDate') {
-              product.OfferDate = field.value;
-            }
-          });
-
-          newProducts.push(product);
-        });
-
-        setProducts(newProducts);
+        setProducts(productItems);
       });
   }, []);
 
   return (
-    <Fragment>
-      {products.map((product: IProduct, index: number) => {
-        return (
-          <ul key={index}>
-            <li>{product.Title}</li>
-            <li>
-              <img src={product.Image} />
-            </li>
-            <li>{product.OfferDate}</li>
-          </ul>
-        );
-      })}
-    </Fragment>
+    <section className="ftco-section" style={{ backgroundColor: 'white' }}>
+      <div className="row">
+        {products.map((product: IProduct, index: number) => {
+          return (
+            <div className="col-md-4 d-flex" key={`product-${index}`}>
+              <div className="product ftco-animate fadeInUp ftco-animated">
+                <Link to={product.Url}>
+                  <div className="img d-flex align-items-center justify-content-center" style={{ backgroundImage: `url("${product.Image.value.src}")` }}>
+                  </div>
+                </Link>
+                <div className="text text-center">
+                  <h2>{product.Title.value}</h2>
+                  <span className="price">{product.OfferDate.value}</span>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };

@@ -2,6 +2,8 @@
 https://storesc.dev.local//api/store/ui?sc_apikey={61FA884F-493D-40C3-BB76-F206837BDF8D}
 
 
+https://storesc.dev.local//api/store/ui?sc_apikey=%7B61FA884F-493D-40C3-BB76-F206837BDF8D%7D&query=query%20%7B%20%20%0A%20%20search(rootItem%3A%20%22%7B802F170C-ADD3-41E7-9483-677FFEF97EBA%7D%22)%7B%0A%20%20%20%20results%20%7B%0A%20%20%20%20%20%20items%7B%0A%20%20%20%20%20%20%20item%20%7B%0A%20%20%20%20%20%20%20%20Title%3A%20field(name%3A%20%22Title%22)%7B%0A%09%09%09%09%09%09%09jss%0A%20%20%20%20%20%20%20%20%20%20%09%09%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20OfferDate%3A%20field(name%3A%20%22OfferDate%22)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09jss%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Image%3A%20field(name%3A%20%22Image%22)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20jss%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+
 https://localhost:8984/solr
 
 https://www.linkedin.com/pulse/using-graphql-aspnet-core-headless-cms-sitecore-10-g%C3%B6ran-halvarsson?trk=read_related_article-card_title

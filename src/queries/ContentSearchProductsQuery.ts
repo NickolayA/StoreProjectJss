@@ -10,11 +10,22 @@ const ContentSearchProductsQuery = (
       results {
         items {
             item {
-            fields(ownFields: true) {
-              name
-              value
-              jss
-            }
+              url
+              Title: field(name: "Title"){
+                rendered
+                value
+                jss
+              }
+              OfferDate: field(name: "OfferDate"){
+                rendered
+                value
+                jss
+              }
+              Image: field(name: "Image"){
+                rendered
+                value
+                jss
+              }
           }
         }
       }

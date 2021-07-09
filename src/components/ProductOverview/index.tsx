@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 import ISitecoreProduct from '../../models/data/ISitecoreProduct';
 import { Text, RichText, Image, DateField } from '@sitecore-jss/sitecore-jss-react';
-import { Fragment, FunctionComponent } from 'react';
+import { Fragment } from 'react';
 
 export const ProductOverview = (
   props: ISitecoreProps<ISitecoreProduct>
@@ -33,6 +33,6 @@ export const ProductOverview = (
           </div>
         </div>
       </section>
-    </Fragment >
+    </Fragment>
   );
 };
