@@ -3,11 +3,9 @@ import {
   SitecoreContextState,
 } from '@sitecore-jss/sitecore-jss-react';
 import React, { useContext, FunctionComponent, useState, useEffect } from 'react';
-import { getApolloContext, useQuery } from 'react-apollo';
+import { getApolloContext } from 'react-apollo';
 import IIntro from '../../models/data/IIntro';
 import ISitecoreContext from '../../models/generic/ISitecoreContext';
-import ISitecoreField from '../../models/generic/ISitecoreField';
-import ISitecoreItem from '../../models/generic/ISitecoreItem';
 import IntroQuery from '../../queries/IntroQuery';
 
 export const Intro: FunctionComponent = (): JSX.Element => {
@@ -17,8 +15,12 @@ export const Intro: FunctionComponent = (): JSX.Element => {
   const apolloContext = useContext(getApolloContext());
 
   const [introFieldValues, setIntroFieldValues] = useState<IIntro>({
-    Title: '',
-    Description: '',
+    Title: {
+      value: ''
+    },
+    Description: {
+      value: ''
+    }
   });
 
   useEffect(() => {
@@ -27,27 +29,28 @@ export const Intro: FunctionComponent = (): JSX.Element => {
         query: IntroQuery(sitecoreContext.itemId, sitecoreContext.language),
       })
       .then((result) => {
-        const item: ISitecoreItem<ISitecoreField<string>> = result.data.item;
+        const item: any = result.data.item;
 
         if (item !== null) {
-          item.fields.map((field: ISitecoreField<string>) => {
-            if (field.name === 'Title') {
-              introFieldValues.Title = field.value;
-            }
-            if (field.name === 'Description') {
-              introFieldValues.Description = field.value;
-            }
-          });
-
-          setIntroFieldValues({ ...introFieldValues });
+          setIntroFieldValues({ Title: item.Title.jss, Description: item.Description.jss });
         }
       });
   }, []);
 
   return (
-    <React.Fragment>
-      <h1>{introFieldValues.Title}</h1>
-      <h2>{introFieldValues.Description}</h2>
-    </React.Fragment>
+    <section className="ftco-intro">
+      <div className="container">
+        <div className="row no-gutters">
+          <div className="col-md-12 d-flex">
+            <div className="intro color-2 w-100 ftco-animate fadeInUp ftco-animated">
+              <div className="text">
+                <h2 style={{ textAlign: 'center' }}>{introFieldValues.Title.value}</h2>
+                <p style={{ textAlign: 'center' }}>{introFieldValues.Description.value}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };

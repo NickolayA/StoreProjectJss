@@ -2,11 +2,15 @@ import * as React from 'react';
 import { Image, RichText } from '@sitecore-jss/sitecore-jss-react';
 import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 import IHeroBanner from '../../models/data/IHeroBanner';
+import styles from './HeroBanner.module.css'
+
+import { getMediaSizeParams, MediaSize } from '../../utils/MediaSizeParams';
 
 export const HeroBanner = (props: ISitecoreProps<IHeroBanner>): JSX.Element => {
   return (
     <React.Fragment>
-      <div className="hero-wrap" style={{ backgroundImage: `url(${props?.fields?.Image?.value?.src} )` }} data-stellar-background-ratio="0.5">
+      <div className="hero-wrap">
+        <Image field={props.fields.Image} className={styles.hero_image} srcSet={[{ ...getMediaSizeParams(MediaSize.Small) }, { ...getMediaSizeParams(MediaSize.Medium) }, { ...getMediaSizeParams(MediaSize.Large) }, { ...getMediaSizeParams(MediaSize.Big) }]} />
         <div className="overlay"></div>
         <div className="container">
           <div className="row no-gutters slider-text align-items-center justify-content-center">

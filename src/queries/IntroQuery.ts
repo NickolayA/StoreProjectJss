@@ -4,9 +4,11 @@ const IntroQuery = (itemID: string, itemLanguage: string) => gql`
 {
     item(path: "${itemID}", language: "${itemLanguage}")
     {
-        fields(ownFields: true){
-            name
-            value
+        Title: field(name: "Title"){
+            jss
+        }
+        Description: field(name: "Description"){
+            jss
         }
     }
 }

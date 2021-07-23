@@ -16,8 +16,8 @@ export const Products: FunctionComponent = (): JSX.Element => {
   const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
     SitecoreContextReactContext
   ).context;
-  const apolloContext = useContext(getApolloContext());
 
+  const apolloContext = useContext(getApolloContext());
   const [products, setProducts] = useState<Array<IProduct>>([]);
 
   useEffect(() => {

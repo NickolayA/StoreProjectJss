@@ -11,19 +11,13 @@ const ContentSearchProductsQuery = (
         items {
             item {
               url
-              Title: field(name: "Title"){
-                rendered
-                value
+              Title: field(name: "Title"){                
                 jss
               }
               OfferDate: field(name: "OfferDate"){
-                rendered
-                value
                 jss
               }
               Image: field(name: "Image"){
-                rendered
-                value
                 jss
               }
           }
