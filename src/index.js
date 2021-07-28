@@ -8,6 +8,7 @@ import AppRoot from './AppRoot';
 import GraphQLClientFactory from './lib/GraphQLClientFactory';
 import config from './temp/config';
 import i18ninit from './i18n';
+import {getHostname} from './util';
 
 /* eslint-disable no-underscore-dangle */
 
@@ -51,7 +52,12 @@ if (__JSS_STATE__) {
 const initialGraphQLState =
   __JSS_STATE__ && __JSS_STATE__.APOLLO_STATE ? __JSS_STATE__.APOLLO_STATE : null;
 
-const graphQLClient = GraphQLClientFactory(config.graphQLEndpoint, false, initialGraphQLState);
+function constructGraphQLEndpoint(targetHostName, graphQLEndpointPath, apiKey) {
+  return `${targetHostName}/${graphQLEndpointPath}?sc_apikey=${apiKey}`;
+}
+
+const graphQLEndpoint = constructGraphQLEndpoint(__JSS_STATE__ !== null ? __JSS_STATE__.sitecore.context.site.targetHostName : getHostname(), config.graphQLEndpointPath, config.sitecoreApiKey);
+const graphQLClient = GraphQLClientFactory(graphQLEndpoint, false, initialGraphQLState);
 
 /*
   App Rendering

@@ -11,7 +11,7 @@ import IntroQuery from '../../queries/IntroQuery';
 export const Intro: FunctionComponent = (): JSX.Element => {
   const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
     SitecoreContextReactContext
-  ).context;
+  ).context; // TODO refactor sitecorecontext
   const apolloContext = useContext(getApolloContext());
 
   const [introFieldValues, setIntroFieldValues] = useState<IIntro>({

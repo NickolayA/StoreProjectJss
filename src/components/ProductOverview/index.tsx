@@ -25,7 +25,7 @@ export const ProductOverview = (
             <Text field={props.fields.ShortDescription} tag="h3" />
 
             <p className="price"><span>{Quantity}</span> <Text field={props.fields.Quantity} tag="span" /></p>
-            <p className="price"><DateField field={props.fields.OfferDate} tag="span" /></p>
+            <p className="price"><DateField field={props.fields.OfferDate} tag="span" render={date => (date?.toLocaleDateString())} /></p>
             <RichText field={props.fields.Description} tag="div" />
             <div className="row mt-4">
               <div className="w-100"></div>

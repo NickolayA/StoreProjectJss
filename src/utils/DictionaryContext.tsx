@@ -1,7 +1,7 @@
 const config = require('../temp/config');
 
 import React, { FunctionComponent, useEffect, useState, useRef } from 'react';
-import StoreDictionaryService from './DictionaryService'
+import StoreDictionaryService from './StoreDictionaryService'
 import { DictionaryPhrases, useSitecoreContext } from '@sitecore-jss/sitecore-jss-react';
 import ISitecoreContext from '../models/generic/ISitecoreContext';
 

@@ -1,7 +1,7 @@
-import { DictionaryPhrases, DictionaryService } from '@sitecore-jss/sitecore-jss';
+import { DictionaryPhrases } from '@sitecore-jss/sitecore-jss';
 import axios from 'axios';
 
-export default class StoreDictionaryService implements DictionaryService {
+export default class StoreDictionaryService {
   dictionaryApi: string = 'sitecore/api/jss/dictionary';
 
   apiHost: string;

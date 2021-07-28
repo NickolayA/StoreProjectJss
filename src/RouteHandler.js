@@ -92,7 +92,7 @@ class RouteHandler extends React.Component {
     const language = this.props.route.match.params.lang || this.state.defaultLanguage;
 
     // get the route data for the new route
-    getRouteData(sitecoreRoutePath, language).then((routeData) => {
+    getRouteData(sitecoreRoutePath, language, (this.props.sitecoreContext !== null && this.props.sitecoreContext.site !== null)? this.props.sitecoreContext.site.targetHostName : getHostname()).then((routeData) => {
       if (routeData !== null && routeData.sitecore && routeData.sitecore.route) {
         // set the sitecore context data and push the new route
         this.props.updateSitecoreContext({
@@ -176,15 +176,17 @@ class RouteHandler extends React.Component {
  * @param {string} route Route path to get data for (e.g. /about)
  * @param {string} language Language to get route data in (content language, e.g. 'en')
  */
-function getRouteData(route, language) {
+function getRouteData(route, language, targetHostName) {
   const fetchOptions = {
-    layoutServiceConfig: { host: getHostname() },
+    layoutServiceConfig: { host: targetHostName },
     querystringParams: { sc_lang: language, sc_apikey: config.sitecoreApiKey },
     fetcher: dataFetcher,
   };
 
   return dataApi.fetchRouteData(route, fetchOptions).catch((error) => {
     if (error.response && error.response.status === 404 && error.response.data) {
+
+      console.log('404 Not Found', route, fetchOptions)
       return error.response.data;
     }
 

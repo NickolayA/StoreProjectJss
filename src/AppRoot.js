@@ -54,7 +54,7 @@ class AppRoot extends React.Component {
 	}
 
 	render() {
-		const { path, Router, graphQLClient } = this.props;
+		const { path, Router, graphQLClient  } = this.props;
 
 		return (
 			<ApolloProvider client={graphQLClient}>

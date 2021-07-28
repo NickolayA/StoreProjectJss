@@ -15,9 +15,9 @@ export const getMediaSizeParams = (mediaSize: MediaSize): IMediaSizeParams => {
     case MediaSize.Large:
       return { mw: 1920, mh: 750 };
     case MediaSize.Big:
-      return { mw: 1200, mh: 750 };
+      return { mw: 1200, mh: 600 };
     case MediaSize.Medium:
-      return { mw: 800, mh: 750 };
+      return { mw: 800, mh: 600 };
     case MediaSize.Small:
       return { mw: 400, mh: 300 };
     default:

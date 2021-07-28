@@ -44,6 +44,10 @@ export const apiKey = config.sitecoreApiKey;
 /** Export the app name. This will be used by default in Headless mode, removing the need to manually configure the app name on the proxy. */
 export const appName = config.jssAppName;
 
+function constructGraphQLEndpoint(targetHostName, graphQLEndpointPath, apiKey) {
+  return `${targetHostName}/${graphQLEndpointPath}?sc_apikey=${apiKey}`;
+}
+
 /**
  * Main entry point to the application when run via Server-Side Rendering,
  * either in Integrated Mode, or with a Node proxy host like the node-headless-ssr-proxy sample.
@@ -57,12 +61,20 @@ export function renderView(callback, path, data, viewBag) {
   try {
     const state = parseServerData(data, viewBag);
 
+    console.log(state, 'Server.js State', state.sitecore.context.site.targetHostName)
+
     /*
       GraphQL Data
       The Apollo Client needs to be initialized to make GraphQL available to the JSS app.
       Not using GraphQL? Remove this, and the ApolloContext from `AppRoot`.
     */
-    const graphQLClient = GraphQLClientFactory(config.graphQLEndpoint, true);
+    const graphQLEndpoint = constructGraphQLEndpoint(state.sitecore.context.site.targetHostName, config.graphQLEndpointPath, config.apiKey);
+    const graphQLClient = GraphQLClientFactory(graphQLEndpoint, true);
+
+    // const siteContext = typeof data !== "object" ? JSON.parse(data) : data
+    // const siteName = siteContext.sitecore.context.site.name;
+    // const language = siteContext.sitecore.context.site.language;
+    // const graphQLClient = GraphQLClientFactory(`${config.graphQLEndpoint}&sc_site=${siteName}&sc_lang=${language}`, true);
 
     /*
       App Rendering

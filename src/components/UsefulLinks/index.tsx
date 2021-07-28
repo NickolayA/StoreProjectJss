@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react'
 import { Text, Link } from '@sitecore-jss/sitecore-jss-react';
 import IUsefulLinks from '../../models/data/IUsefulLinks';
 import { ISitecoreProps } from '../../models/generic/ISitecoreProps';

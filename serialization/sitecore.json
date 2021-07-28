@@ -1,0 +1,11 @@
+{
+  "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
+  "modules": [
+    "./TODO/*.module.json"
+  ],
+  "plugins": [],
+  "serialization": {
+    "defaultMaxRelativeItemPathLength": 100,
+    "defaultModuleRelativeSerializationPath": "serialization"
+  }
+}

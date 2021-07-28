@@ -1,4 +1,4 @@
-import React, { FunctionComponent, Fragment } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useContext, useState, useEffect } from 'react';
 import {
   SitecoreContextReactContext,
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 export const Products: FunctionComponent = (): JSX.Element => {
   const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
     SitecoreContextReactContext
-  ).context;
+  ).context; // TODO refactor context
 
   const apolloContext = useContext(getApolloContext());
   const [products, setProducts] = useState<Array<IProduct>>([]);
