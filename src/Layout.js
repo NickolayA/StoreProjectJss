@@ -9,12 +9,12 @@ import './assets/css/magnific-popup.css';
 import './assets/css/flaticon.css';
 import './assets/css/style.css';
 
-const Layout = ({ route }) => (
-  <React.Fragment>
+const Layout = ({ route }) => {
+  return <React.Fragment>
       <DictionaryContextProvider>
         <Placeholder name="jss-main" rendering={route} />
       </DictionaryContextProvider>
   </React.Fragment>
-);
+};
 
 export default Layout;

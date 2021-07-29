@@ -11,7 +11,8 @@ export default function(manifest) {
     name: 'HeroBanner',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'heading', type: CommonFieldTypes.SingleLineText },
+      { name: 'Text', type: CommonFieldTypes.RichText },
+      { name: 'Image', type: CommonFieldTypes.Image }
     ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,

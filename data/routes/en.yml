@@ -10,7 +10,6 @@
 
 # Setting an ID is optional, but it will allow referring to this item in internal links
 # the ID can be a app-wide-unique string, or a GUID value.
-id: home-page
 
 # Route-level fields are appropriate for page level data like <title> contents
 # Define route level fields in /sitecore/definitions/routes.sitecore
@@ -20,3 +19,21 @@ fields:
 # root placeholder names are defined in the package.json config section (required for Sitecore deployment)
 placeholders:
   jss-main:
+    - componentName: Header
+      placeholders:
+        store-header:
+          - componentName: Navigation
+            fields:
+              Pages:
+                - id: home-page-content
+                - id: products-page-content
+    - componentName: HeroBanner
+      fields:
+        Text: Good <span>Drink</span> for Good&nbsp;<span>Moments</span>.
+        Image: 
+          src: /data/media/img/bg_2.jpg
+    - componentName: TopProducts
+    - componentName: Footer
+      placeholders:
+        store-footer:
+          - componentName: UsefulLinks

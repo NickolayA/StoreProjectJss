@@ -1,6 +1,5 @@
 import {
-  SitecoreContextReactContext,
-  SitecoreContextState,
+  useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-react';
 import React, { useContext, FunctionComponent, useState, useEffect } from 'react';
 import { getApolloContext } from 'react-apollo';
@@ -9,9 +8,8 @@ import ISitecoreContext from '../../models/generic/ISitecoreContext';
 import IntroQuery from '../../queries/IntroQuery';
 
 export const Intro: FunctionComponent = (): JSX.Element => {
-  const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
-    SitecoreContextReactContext
-  ).context; // TODO refactor sitecorecontext
+  const { sitecoreContext } = useSitecoreContext<ISitecoreContext>();
+
   const apolloContext = useContext(getApolloContext());
 
   const [introFieldValues, setIntroFieldValues] = useState<IIntro>({

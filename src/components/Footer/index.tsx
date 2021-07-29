@@ -4,14 +4,12 @@ import { DictionaryContext } from '../../utils/DictionaryContext';
 import ILayout from '../../models/data/ILayout';
 
 export const Footer = (props: ILayout): JSX.Element => {
-
   const dictionaryContext = useContext(DictionaryContext);
-
   const { AllRightReserved, Copyright } = dictionaryContext.phrases;
 
   return (
     <footer className="ftco-footer">
-      <Placeholder name="footer" rendering={props.rendering} />
+      <Placeholder name="store-footer" rendering={props.rendering} />
       <div className="container-fluid px-0 py-5 bg-black">
         <div className="container">
           <div className="row">

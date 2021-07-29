@@ -1,9 +1,9 @@
 import ISitecoreImage from './ISitecoreImage';
-import ISitecoreValue from './ISitecoreValue';
+import IValue from './IValue';
 
 export default interface ISitecoreField<T> {
   name: string;
   value?: T;
   editable?: string;
-  jss?: ISitecoreValue<ISitecoreImage>;
+  jss?: IValue<ISitecoreImage>;
 }

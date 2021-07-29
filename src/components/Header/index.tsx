@@ -3,11 +3,9 @@ import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
 import { Link } from 'react-router-dom'
 import { DictionaryContext } from '../../utils/DictionaryContext';
 import ILayout from '../../models/data/ILayout';
-import { isExperienceEditorActive } from '@sitecore-jss/sitecore-jss-react';
 
 export const Header = (props: ILayout): JSX.Element => {
   const dictionaryContext = useContext(DictionaryContext);
-
   const { SiteLogoText } = dictionaryContext.phrases;
 
   return (
@@ -19,7 +17,7 @@ export const Header = (props: ILayout): JSX.Element => {
             aria-haspopup="true" aria-expanded="false">
           </a>
         </div>
-        <Placeholder name="header" rendering={props.rendering} />
+        <Placeholder name="store-header" rendering={props.rendering} />
       </div>
     </nav>
   );

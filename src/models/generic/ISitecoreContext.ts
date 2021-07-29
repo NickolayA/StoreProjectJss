@@ -3,5 +3,6 @@ export default interface ISitecoreContext {
   language: string;
   site: {
     name: string;
+    availableLanguages: string[];
   };
 }

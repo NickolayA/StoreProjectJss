@@ -1,8 +1,4 @@
-interface IValue<T> {
-  value: T;
-}
-
-// TODO export IValue
+import IValue from '../generic/IValue';
 
 export default interface IIntro {
   Title: IValue<string>;

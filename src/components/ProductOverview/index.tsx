@@ -19,14 +19,14 @@ export const ProductOverview = (
       <div className="container">
         <div className="row">
           <div className="col-lg-6 mb-5 ftco-animate fadeInUp ftco-animated">
-            <Image field={props.fields.Image} className="img-fluid" srcSet={[{ ...getMediaSizeParams(MediaSize.Small) }, { ...getMediaSizeParams(MediaSize.Medium) }]} />
+            <Image field={props.fields?.Image} className="img-fluid" srcSet={[{ ...getMediaSizeParams(MediaSize.Small) }, { ...getMediaSizeParams(MediaSize.Medium) }]} />
           </div>
           <div className="col-lg-6 product-details pl-md-5 ftco-animate fadeInUp ftco-animated">
-            <Text field={props.fields.ShortDescription} tag="h3" />
+            <Text field={props.fields?.ShortDescription} tag="h3" />
 
-            <p className="price"><span>{Quantity}</span> <Text field={props.fields.Quantity} tag="span" /></p>
-            <p className="price"><DateField field={props.fields.OfferDate} tag="span" render={date => (date?.toLocaleDateString())} /></p>
-            <RichText field={props.fields.Description} tag="div" />
+            <p className="price"><span>{Quantity}</span> <Text field={props.fields?.Quantity} tag="span" /></p>
+            <p className="price"><DateField field={{ ...props.fields?.OfferDate }} tag="span" render={date => (date?.toLocaleDateString())} /></p>
+            <RichText field={props.fields?.Description} tag="div" />
             <div className="row mt-4">
               <div className="w-100"></div>
               <div className="col-md-12">

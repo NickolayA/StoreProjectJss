@@ -1,8 +1,8 @@
 import ISitecoreRendering from './ISitecoreRendering';
+import ISitecoreFields from './ISitecoreFields';
 
-export interface ISitecoreProps<T = {}, P = {}, M = {}, K = {}> {
+export interface ISitecoreProps<T = {}, P = {}, M = {}, K = {}> extends ISitecoreFields<T> {
   rendering: ISitecoreRendering<M, K>;
-  fields: T; // refactor for fields?
   params: P;
   componentFactory: any;
 }

@@ -1,8 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useContext, useState, useEffect } from 'react';
 import {
-  SitecoreContextReactContext,
-  SitecoreContextState,
+  useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-react';
 import { getApolloContext } from 'react-apollo';
 import ContentSearchProductsQuery from '../../queries/ContentSearchProductsQuery';
@@ -11,12 +10,9 @@ import { ProductOverviewPageTemplate } from '../../Constants';
 import IProduct from '../../models/data/IProduct';
 import { Link } from 'react-router-dom'
 
-
+// TODO product to separate component
 export const Products: FunctionComponent = (): JSX.Element => {
-  const sitecoreContext = useContext<SitecoreContextState<ISitecoreContext>>(
-    SitecoreContextReactContext
-  ).context; // TODO refactor context
-
+  const { sitecoreContext } = useSitecoreContext<ISitecoreContext>();
   const apolloContext = useContext(getApolloContext());
   const [products, setProducts] = useState<Array<IProduct>>([]);
 

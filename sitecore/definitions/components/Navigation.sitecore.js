@@ -11,7 +11,7 @@ export default function(manifest) {
     name: 'Navigation',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'heading', type: CommonFieldTypes.SingleLineText },
+      { name: 'Pages', type: CommonFieldTypes.GeneralLink },
     ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
