@@ -9,10 +9,8 @@ import { getMediaSizeParams, MediaSize } from '../../utils/MediaSizeParams';
 export const ProductOverview = (
   props: ISitecoreProps<ISitecoreProduct>
 ): JSX.Element => {
-
   const dictionaryContext = useContext(DictionaryContext);
-
-  const { Quantity } = dictionaryContext.phrases;
+  const { Quantity, OfferDate } = dictionaryContext.phrases;
 
   return (
     <section className="ftco-section" style={{ backgroundColor: 'white' }}>
@@ -25,7 +23,7 @@ export const ProductOverview = (
             <Text field={props.fields?.ShortDescription} tag="h3" />
 
             <p className="price"><span>{Quantity}</span> <Text field={props.fields?.Quantity} tag="span" /></p>
-            <p className="price"><DateField field={{ ...props.fields?.OfferDate }} tag="span" render={date => (date?.toLocaleDateString())} /></p>
+            <p className="price"><span>{OfferDate} <DateField field={{ ...props.fields?.OfferDate }} render={date => (date?.toLocaleDateString())} /></span></p>
             <RichText field={props.fields?.Description} tag="div" />
             <div className="row mt-4">
               <div className="w-100"></div>

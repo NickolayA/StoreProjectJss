@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { useContext, useState, useEffect } from 'react';
 import {
   useSitecoreContext,
+  DateField
 } from '@sitecore-jss/sitecore-jss-react';
 import { getApolloContext } from 'react-apollo';
 import ContentSearchProductsQuery from '../../queries/ContentSearchProductsQuery';
@@ -9,12 +10,15 @@ import ISitecoreContext from '../../models/generic/ISitecoreContext';
 import { ProductOverviewPageTemplate } from '../../Constants';
 import IProduct from '../../models/data/IProduct';
 import { Link } from 'react-router-dom'
+import { DictionaryContext } from '../../utils/DictionaryContext';
 
-// TODO product to separate component
 export const Products: FunctionComponent = (): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext<ISitecoreContext>();
   const apolloContext = useContext(getApolloContext());
   const [products, setProducts] = useState<Array<IProduct>>([]);
+
+  const dictionaryContext = useContext(DictionaryContext);
+  const { OfferDate } = dictionaryContext.phrases;
 
   useEffect(() => {
     apolloContext.client
@@ -46,7 +50,7 @@ export const Products: FunctionComponent = (): JSX.Element => {
                 </Link>
                 <div className="text text-center">
                   <h2>{product.Title.value}</h2>
-                  <span className="price">{product.OfferDate.value}</span>
+                  <span className="price">{OfferDate} <DateField field={product.OfferDate} render={date => (date?.toLocaleDateString())} /></span>
                 </div>
               </div>
             </div>

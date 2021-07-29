@@ -1,4 +1,6 @@
 
+{6FE79ED2-443E-4673-A97C-7FD8EAC9E8AD}
+
 https://storesc.dev.local//api/store/ui?sc_apikey={61FA884F-493D-40C3-BB76-F206837BDF8D}
 
 

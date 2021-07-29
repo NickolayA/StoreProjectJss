@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Text, Image, DateField, isExperienceEditorActive } from '@sitecore-jss/sitecore-jss-react';
 import { ISitecoreProps } from '../../models/generic/ISitecoreProps';
 import ITopProducts from '../../models/data/ITopProducts';
 import { Link } from 'react-router-dom';
+import { DictionaryContext } from '../../utils/DictionaryContext';
 
-// TODO Product to separate file
 export const TopProducts = ({ fields }: ISitecoreProps<ITopProducts>): JSX.Element => {
+  const dictionaryContext = useContext(DictionaryContext);
+  const { OfferDate } = dictionaryContext.phrases;
+
   return (
     <section className="ftco-section" style={{ backgroundColor: 'white' }}>
       <div className="container">
@@ -34,7 +37,7 @@ export const TopProducts = ({ fields }: ISitecoreProps<ITopProducts>): JSX.Eleme
                     <Text tag="span" className="seller" field={product.fields?.Quantity} />
                     <Text tag="span" className="category" field={product.fields?.Title} />
                     <Text tag="h2" field={product.fields?.ShortDescription} />
-                    <DateField tag="span" className="price" field={{ ...product.fields?.OfferDate }} render={(date) => (date?.toLocaleDateString())} />
+                    {OfferDate} <DateField tag="span" className="price" field={{ ...product.fields?.OfferDate }} render={(date) => (date?.toLocaleDateString())} />
                   </div>
                 </div>
               </div>
