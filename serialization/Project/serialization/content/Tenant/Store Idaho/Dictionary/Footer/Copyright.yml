@@ -7,6 +7,9 @@ SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
   Value: Copyright
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 
 Languages:
 - Language: en
   Fields:
@@ -21,11 +24,11 @@ Languages:
       Value: 20210722T185443Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c51b7905-e0fc-41b5-9ba6-19402d962a83"
+      Value: "e1b70c2b-9008-41b9-b6a3-0e91d7f40bc5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210722T185459Z
+      Value: 20210730T170657Z

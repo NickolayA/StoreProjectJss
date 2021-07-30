@@ -8,6 +8,12 @@
         "path": "/sitecore/templates/Foundation/Multisite",
         "allowedPushOperations": "createAndUpdate",
         "scope": "itemAndDescendants"
+      },
+      {
+        "name": "languages",
+        "path": "/sitecore/system/Languages",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "DescendantsOnly"
       }
     ]
   }

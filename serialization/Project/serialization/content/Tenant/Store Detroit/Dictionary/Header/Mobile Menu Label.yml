@@ -7,6 +7,9 @@ SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
   Value: MobileMenuLabel
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 
 Languages:
 - Language: en
   Fields:
@@ -50,11 +53,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "32386e43-79a0-4ff1-b653-068c48884c57"
+      Value: "df137ccc-0bbc-426d-8852-4966ccc616ee"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210729T205431Z
+      Value: 20210730T170828Z

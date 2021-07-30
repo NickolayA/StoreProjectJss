@@ -1,0 +1,14 @@
+{
+  "namespace": "Store.Project.Layout",
+  "references": [],
+  "items": {
+    "includes": [
+      {
+        "name": "layout",
+        "path": "/sitecore/layout/Layouts/Project",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

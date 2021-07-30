@@ -3,7 +3,8 @@
   "references": [
     "Store.Foundation.Multisite",
     "Store.Project.Templates",
-    "Store.Feature.Renderings"
+    "Store.Feature.Renderings",
+    "Store.Project.Layout"
   ],
   "items": {
     "includes": [

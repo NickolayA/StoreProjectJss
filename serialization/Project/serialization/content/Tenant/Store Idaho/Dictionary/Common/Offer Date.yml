@@ -10,6 +10,9 @@ SharedFields:
 - ID: "61cf7151-0cbd-4db4-9738-d753a55a6e65"
   Hint: __Enforce version presence
   Value: 
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 
 Languages:
 - Language: en
   Fields:
@@ -33,6 +36,10 @@ Languages:
       Hint: __Updated
       Value: 20210729T205924Z
 - Language: "pt-BR"
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: "Offer date:"
   Versions:
   - Version: 1
     Fields:
@@ -49,11 +56,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1e51bc60-8b4f-458d-b4f1-7e326d0f4f6b"
+      Value: "a0d4263f-b398-4e33-b8c3-0a6263692e00"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210729T210023Z
+      Value: 20210730T170745Z

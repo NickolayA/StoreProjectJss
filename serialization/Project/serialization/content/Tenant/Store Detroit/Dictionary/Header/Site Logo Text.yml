@@ -7,6 +7,9 @@ SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
   Value: SiteLogoText
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 
 Languages:
 - Language: en
   Fields:
@@ -50,11 +53,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9c037bb5-9e76-4f8b-b384-eb6b92b97a2d"
+      Value: "862a49ee-75df-4567-8d7a-3865467042bb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210728T172701Z
+      Value: 20210730T170834Z
