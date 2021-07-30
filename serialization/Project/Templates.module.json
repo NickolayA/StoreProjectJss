@@ -1,0 +1,14 @@
+{
+  "namespace": "Store.Project.Templates",
+  "references": [],
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Project",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

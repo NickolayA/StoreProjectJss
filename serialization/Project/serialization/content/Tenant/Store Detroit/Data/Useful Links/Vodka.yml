@@ -1,0 +1,28 @@
+﻿---
+ID: "215bb34c-3b8b-4edb-89c9-1b5f168a92c4"
+Parent: "242a33e6-ce40-4de2-9b4b-86370bb9693c"
+Template: "21fdc1c8-53a8-4ad5-8219-26feb0590eeb"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Useful Links/Vodka
+SharedFields:
+- ID: "b47cbb3f-aa41-4209-a260-56de5189c926"
+  Hint: Link
+  Value: |
+    <link text="Vodka" anchor="" linktype="internal" class="" title="Vodka"  querystring="" id="{DC2D27DA-5663-46ED-B58A-0436CF760A42}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210728T173445Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7b092b0-e849-4d22-9e87-a55af7e02381"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210728T174641Z

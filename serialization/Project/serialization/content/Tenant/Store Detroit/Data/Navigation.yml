@@ -1,0 +1,37 @@
+﻿---
+ID: "3822dcd6-1f73-42f2-8154-f3b7ab6514b8"
+Parent: "7f88e079-4471-4b67-9bd8-45a6abe0bfd1"
+Template: "79a84fe8-9c42-4cd4-ae90-be82db429e7a"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Navigation
+Languages:
+- Language: en
+  Fields:
+  - ID: "a63c7ef2-8374-4f8e-a4e1-d2651761ad4e"
+    Hint: Pages
+    Value: |
+      {23336C9F-92A8-4BB6-AD01-DD3FE620FCED}
+      {EE31EBCA-C89F-486E-BB88-BA71C3A747BB}
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210414T172854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e037c2a-9546-4f4e-aa94-a124ff2345ef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210727T164343Z

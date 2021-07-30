@@ -1,0 +1,72 @@
+﻿---
+ID: "a7cfdb4b-dca0-47a2-bf23-b611a1e9b528"
+Parent: "a96d30d5-ea13-4c6a-9454-59b40cd60f8b"
+Template: "1f737ac6-fad7-43d7-8875-1d155c896337"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Hero Banners/Hero Banner 1
+Languages:
+- Language: en
+  Fields:
+  - ID: "a2c269e1-6c27-4d70-ae93-c13dcb967587"
+    Hint: Image
+    Value: |
+      <image mediaid="{4BB2D3B8-5AA2-4D13-B5B9-862817E2F95A}" />
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210331T164701Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6fd76067-7255-4b50-bde7-bf626b47b5eb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "cec18d66-78ba-41d9-b774-2cfb2e14f15b"
+      Hint: Text
+      Value: Good <span>Drink</span> for Good&nbsp;<span>Moments</span>.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210725T065545Z
+- Language: "pt-BR"
+  Fields:
+  - ID: "a2c269e1-6c27-4d70-ae93-c13dcb967587"
+    Hint: Image
+    Value: |
+      <image mediaid="{C13B343E-8C36-4349-BEEF-5DCA48FBEF06}" />
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210723T063258Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1077b82a-91f3-483c-986c-d90b3e2d1d5f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "cec18d66-78ba-41d9-b774-2cfb2e14f15b"
+      Hint: Text
+      Value: Boa <span> bebida </span> para sempre <span>momentos </span>.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210723T063854Z

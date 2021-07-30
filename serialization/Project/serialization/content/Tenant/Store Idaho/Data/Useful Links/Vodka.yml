@@ -1,0 +1,31 @@
+﻿---
+ID: "f2628528-fdf9-4dbd-9ffd-826e0545ae19"
+Parent: "8ec7548a-2a9d-428b-a650-7f309a34b3a7"
+Template: "21fdc1c8-53a8-4ad5-8219-26feb0590eeb"
+Path: /sitecore/content/Tenant/Store Idaho/Data/Useful Links/Vodka
+SharedFields:
+- ID: "b47cbb3f-aa41-4209-a260-56de5189c926"
+  Hint: Link
+  Value: |
+    <link linktype="internal" text="Vodka" title="Vodka" querystring="" target="" id="{5AE1F9AE-EBF8-46F3-9139-0CE156F47556}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210728T173600Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "20d01538-bc59-4a4e-98fa-5b2e3d87ca45"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210728T185231Z

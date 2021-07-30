@@ -1,0 +1,57 @@
+﻿---
+ID: "96e02986-d38a-4019-9782-249032fa1d3f"
+Parent: "802f170c-add3-41e7-9483-677ffef97eba"
+Template: "d40ea145-20ce-403a-8a45-e6929302e558"
+Path: /sitecore/content/Tenant/Store Idaho/Home/Products/Tequila
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{25D8FA65-3B6B-4D5D-9688-8B3129CEF39E}"
+          s:ph="/jss-main/store-header-{9D693567-CD72-443B-A034-2341715BB62B}-0" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210302T190627Z
+    - ID: "319b3bab-b8d8-40f8-a3a7-94a51b7a71ae"
+      Hint: Quantity
+      Value: 10
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6335a144-b99f-4e18-b4fb-1566a9a25d3d"
+    - ID: "9334d2db-22b6-4722-bad8-d40ebb7654a5"
+      Hint: OfferDate
+      Value: 20210303T153100Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c4d6233c-2ed3-40a5-a59f-ef8e83a3e37a"
+      Hint: ShortDescription
+      Value: Macallan
+    - ID: "cbd53881-9987-40c4-96c4-458bff908bf1"
+      Hint: Description
+      Value: |
+        <p style="color: #808080; background-color: #ffffff; margin-bottom: 1rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <p style="color: #808080; background-color: #ffffff; margin-top: 0px; margin-bottom: 1rem;">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn&rsquo;t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    - ID: "d90a4078-0eaa-4028-96bf-dabe97b478d7"
+      Hint: Image
+      Value: |
+        <image mediaid="{641E558A-1031-4DFE-8260-6718776EA6AE}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210729T200539Z
+    - ID: "ff440bfe-15fa-4998-a135-ae8945fc7e8e"
+      Hint: Title
+      Value: Tequila

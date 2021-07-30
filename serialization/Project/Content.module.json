@@ -1,0 +1,18 @@
+{
+  "namespace": "Store.Project.Content",
+  "references": [
+    "Store.Foundation.Multisite",
+    "Store.Project.Templates",
+    "Store.Feature.Renderings"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "content",
+        "path": "/sitecore/content/Tenant",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

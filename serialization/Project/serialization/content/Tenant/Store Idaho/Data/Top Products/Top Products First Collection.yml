@@ -1,0 +1,37 @@
+﻿---
+ID: "90bb375b-a87a-4015-a02d-d495f53a946a"
+Parent: "194951e5-5936-400c-bf17-ee046f915bb8"
+Template: "9c6d2c80-cf44-44e3-afbf-1dc6654234c6"
+Path: /sitecore/content/Tenant/Store Idaho/Data/Top Products/Top Products First Collection
+Languages:
+- Language: en
+  Fields:
+  - ID: "1ed15bac-5c98-4260-b5fb-adb65a75fb49"
+    Hint: ListOfProducts
+    Value: |
+      {8E349B34-F0B3-4F82-A624-7A01986C5640}
+      {A7133CD8-636D-410C-AE86-F28A310534C9}
+      {0BD46E7B-4908-47A7-A813-4BB7B05A5C3E}
+      {550A82D3-B27D-4B88-8A57-CB11C8F04F65}
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ea0237c-2f38-4524-9d89-09a27015671e"
+      Hint: Title
+      Value: Our Delightful offerings
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210317T155027Z
+    - ID: "2dec6423-4d0f-4e15-b81b-36467e0afe98"
+      Hint: Description
+      Value: Tastefully Yours
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0ea89fb6-1564-4d7e-a91a-9687b27d10ee"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210707T212935Z

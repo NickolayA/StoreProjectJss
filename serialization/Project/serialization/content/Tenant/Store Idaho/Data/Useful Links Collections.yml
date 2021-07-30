@@ -1,0 +1,23 @@
+﻿---
+ID: "3382bb76-17f8-415c-94e6-19cc423acd90"
+Parent: "f0df1954-02ef-4c7b-aeac-56d6cbc25bb9"
+Template: "e8f2af9a-d192-4ac2-9a4e-1f75593bb8ca"
+Path: /sitecore/content/Tenant/Store Idaho/Data/Useful Links Collections
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210331T213345Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a24c5e3-e2a8-4f86-ae6b-a51421d86fe7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210331T213345Z

@@ -1,0 +1,56 @@
+﻿---
+ID: "ee31ebca-c89f-486e-bb88-ba71c3a747bb"
+Parent: "23336c9f-92a8-4bb6-ad01-dd3fe620fced"
+Template: "cd0ada35-b2f5-4e72-b518-df08b53d057c"
+Path: /sitecore/content/Tenant/Store Detroit/Home/Products
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{25D8FA65-3B6B-4D5D-9688-8B3129CEF39E}"
+          s:ds="{3822DCD6-1F73-42F2-8154-F3B7AB6514B8}"
+          s:ph="/jss-main/store-header-{9D693567-CD72-443B-A034-2341715BB62B}-0" />
+        <r
+          uid="{D3A517C6-D5B6-427D-A01D-6DF2652EBA0F}"
+          s:ds="{A7CFDB4B-DCA0-47A2-BF23-B611A1E9B528}" />
+        <r
+          uid="{46895764-BADC-48EB-A100-182057D39354}"
+          s:ccb="Clear on publish"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{4F30BFA2-DE95-483F-A59B-C17BE9D319A2}"
+          s:ccb="Clear on publish"
+          s:ds=""
+          s:par="" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210302T190323Z
+    - ID: "5f7a0d75-f4ab-4efe-b161-46abaf15a920"
+      Hint: Description
+      Value: A small river named Duden flows by their place and supplies it with the necessary regelialia.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d768d297-295e-425d-9eda-06e86e708961"
+    - ID: "918b66c7-f864-4927-8c11-d4915e6be106"
+      Hint: Title
+      Value: MONEY BACK GUARANTEE DETROIT
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210729T201647Z

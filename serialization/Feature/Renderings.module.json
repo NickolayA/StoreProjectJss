@@ -1,0 +1,14 @@
+{
+  "namespace": "Store.Feature.Renderings",
+  "references": [],
+  "items": {
+    "includes": [
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Feature",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

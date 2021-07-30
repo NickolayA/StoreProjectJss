@@ -1,0 +1,37 @@
+﻿---
+ID: "6fe79ed2-443e-4673-a97c-7fd8eac9e8ad"
+Parent: "f0df1954-02ef-4c7b-aeac-56d6cbc25bb9"
+Template: "79a84fe8-9c42-4cd4-ae90-be82db429e7a"
+Path: /sitecore/content/Tenant/Store Idaho/Data/Navigation
+Languages:
+- Language: en
+  Fields:
+  - ID: "a63c7ef2-8374-4f8e-a4e1-d2651761ad4e"
+    Hint: Pages
+    Value: |
+      {06EC8232-8F27-4634-AD39-A44EBAE1EF08}
+      {802F170C-ADD3-41E7-9483-677FFEF97EBA}
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210414T172854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "394e704c-0db9-4de1-b304-a9338f72437f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210623T171225Z

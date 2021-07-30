@@ -1,0 +1,52 @@
+﻿---
+ID: "802f170c-add3-41e7-9483-677ffef97eba"
+Parent: "06ec8232-8f27-4634-ad39-a44ebae1ef08"
+Template: "cd0ada35-b2f5-4e72-b518-df08b53d057c"
+Path: /sitecore/content/Tenant/Store Idaho/Home/Products
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{25D8FA65-3B6B-4D5D-9688-8B3129CEF39E}"
+          s:ph="/jss-main/store-header-{9D693567-CD72-443B-A034-2341715BB62B}-0" />
+        <r
+          uid="{46895764-BADC-48EB-A100-182057D39354}"
+          s:ccb="Clear on publish"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{4F30BFA2-DE95-483F-A59B-C17BE9D319A2}"
+          s:ccb="Clear on publish"
+          s:ds=""
+          s:par="" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210302T190323Z
+    - ID: "5f7a0d75-f4ab-4efe-b161-46abaf15a920"
+      Hint: Description
+      Value: A small river named Duden flows by their place and supplies it with the necessary regelialia.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d85ca00b-7a35-42d5-88c6-b8bcae459a63"
+    - ID: "918b66c7-f864-4927-8c11-d4915e6be106"
+      Hint: Title
+      Value: MONEY BACK GUARANTEE
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210729T201612Z

@@ -1,0 +1,23 @@
+﻿---
+ID: "66c80ee3-8f8a-499d-bd0e-35821ddec890"
+Parent: "7f88e079-4471-4b67-9bd8-45a6abe0bfd1"
+Template: "8216fdbf-f1b8-41ef-b064-bdaa1ed926c5"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Top Products
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210317T155021Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6a794e74-c35b-4f16-a613-d001a53c1548"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210317T155021Z

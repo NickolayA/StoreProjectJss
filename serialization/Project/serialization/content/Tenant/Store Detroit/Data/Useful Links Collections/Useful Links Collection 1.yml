@@ -1,0 +1,43 @@
+﻿---
+ID: "f7295b09-ee28-4d91-8a7b-5eff354e64a2"
+Parent: "fb98236b-86ff-4c11-ac1c-c788f14f92b6"
+Template: "f0459a82-49aa-4dfb-8bd0-564a7cde87ee"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Useful Links Collections/Useful Links Collection 1
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210331T192311Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c3d0e12a-8390-421a-b0dd-66c2bb4d1133"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c3144412-2c57-4afc-85fa-bd98db04e6ed"
+      Hint: Links
+      Value: |
+        {B1B83F12-07A8-40A6-A751-33980DE664A3}
+        {A0653EC7-0A14-43D4-9334-C288F8632A42}
+    - ID: "ccc9ccc3-0eef-4772-9f02-e0caef1ab15f"
+      Hint: Title
+      Value: Useful Links
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210721T184620Z

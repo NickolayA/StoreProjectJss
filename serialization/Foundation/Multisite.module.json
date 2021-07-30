@@ -1,0 +1,14 @@
+{
+  "namespace": "Store.Foundation.Multisite",
+  "references": [],
+  "items": {
+    "includes": [
+      {
+        "name": "multisite",
+        "path": "/sitecore/templates/Foundation/Multisite",
+        "allowedPushOperations": "createAndUpdate",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

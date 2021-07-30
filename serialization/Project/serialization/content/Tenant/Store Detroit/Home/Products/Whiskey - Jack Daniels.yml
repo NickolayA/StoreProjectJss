@@ -1,0 +1,67 @@
+﻿---
+ID: "9d317277-8585-4f8c-9ffb-5429c6d22f77"
+Parent: "ee31ebca-c89f-486e-bb88-ba71c3a747bb"
+Template: "d40ea145-20ce-403a-8a45-e6929302e558"
+Path: "/sitecore/content/Tenant/Store Detroit/Home/Products/Whiskey - Jack Daniels"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{25D8FA65-3B6B-4D5D-9688-8B3129CEF39E}"
+          s:ds="{3822DCD6-1F73-42F2-8154-F3B7AB6514B8}"
+          s:ph="/jss-main/store-header-{9D693567-CD72-443B-A034-2341715BB62B}-0" />
+        <r
+          uid="{D3A517C6-D5B6-427D-A01D-6DF2652EBA0F}"
+          s:ds="{A7CFDB4B-DCA0-47A2-BF23-B611A1E9B528}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210302T190627Z
+    - ID: "319b3bab-b8d8-40f8-a3a7-94a51b7a71ae"
+      Hint: Quantity
+      Value: 11
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3eb11469-f9e0-48b1-adaf-7d5131173ee3"
+    - ID: "9334d2db-22b6-4722-bad8-d40ebb7654a5"
+      Hint: OfferDate
+      Value: 20210727T210000Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c4d6233c-2ed3-40a5-a59f-ef8e83a3e37a"
+      Hint: ShortDescription
+      Value: Screwball
+    - ID: "cbd53881-9987-40c4-96c4-458bff908bf1"
+      Hint: Description
+      Value: |
+        <p style="color: #808080; background-color: #ffffff; margin-bottom: 1rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <p style="color: #808080; background-color: #ffffff; margin-top: 0px; margin-bottom: 1rem;">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn&rsquo;t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    - ID: "d90a4078-0eaa-4028-96bf-dabe97b478d7"
+      Hint: Image
+      Value: |
+        <image mediaid="{7E8FA44D-B0DE-4D60-A0D3-AA78E56E5B93}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210729T200148Z
+    - ID: "ff440bfe-15fa-4998-a135-ae8945fc7e8e"
+      Hint: Title
+      Value: Whiskey

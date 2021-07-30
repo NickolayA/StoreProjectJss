@@ -1,0 +1,37 @@
+﻿---
+ID: "dc547462-1e03-456b-abe5-c9f010c05c0b"
+Parent: "66c80ee3-8f8a-499d-bd0e-35821ddec890"
+Template: "9c6d2c80-cf44-44e3-afbf-1dc6654234c6"
+Path: /sitecore/content/Tenant/Store Detroit/Data/Top Products/Top Products First Collection
+Languages:
+- Language: en
+  Fields:
+  - ID: "1ed15bac-5c98-4260-b5fb-adb65a75fb49"
+    Hint: ListOfProducts
+    Value: |
+      {9D317277-8585-4F8C-9FFB-5429C6D22F77}
+      {77AA1B34-8C12-498C-88B6-428924640895}
+      {4EE99C19-5FBF-44FC-B5D3-F6AC908C59E7}
+      {4CE08E0F-DFFE-4AB0-BE34-A25AB07B0591}
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ea0237c-2f38-4524-9d89-09a27015671e"
+      Hint: Title
+      Value: Our Delightful offerings
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210317T155027Z
+    - ID: "2dec6423-4d0f-4e15-b81b-36467e0afe98"
+      Hint: Description
+      Value: Tastefully Yours Detroit
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f3654c5d-59e9-4ffd-b8c1-7957436e32a3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210727T143324Z

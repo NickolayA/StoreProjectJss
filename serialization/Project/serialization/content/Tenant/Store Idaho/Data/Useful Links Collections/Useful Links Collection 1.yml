@@ -1,0 +1,46 @@
+﻿---
+ID: "a0119971-a5ba-4350-96d2-2073c5ed3f55"
+Parent: "3382bb76-17f8-415c-94e6-19cc423acd90"
+Template: "f0459a82-49aa-4dfb-8bd0-564a7cde87ee"
+Path: /sitecore/content/Tenant/Store Idaho/Data/Useful Links Collections/Useful Links Collection 1
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210331T192311Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4f06ffa9-1413-4df6-a3b9-cc868fb92308"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c3144412-2c57-4afc-85fa-bd98db04e6ed"
+      Hint: Links
+      Value: |
+        {B1B83F12-07A8-40A6-A751-33980DE664A3}
+        {A0653EC7-0A14-43D4-9334-C288F8632A42}
+    - ID: "ccc9ccc3-0eef-4772-9f02-e0caef1ab15f"
+      Hint: Title
+      Value: Useful Links
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210729T063628Z
